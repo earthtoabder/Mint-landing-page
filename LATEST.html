@@ -3411,15 +3411,21 @@
                 <div class="screenshot-carousel">
                     <div class="screenshot-track">
                         <div class="screenshot-slide">
-                            <img src="image.png" alt="Dashboard Minthr" class="dashboard-screenshot">
+                            <img src="image0.png" alt="Dashboard Minthr" class="dashboard-screenshot">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="image2.png" alt="Gestion des employés" class="dashboard-screenshot">
+                            <img src="image1.png" alt="Gestion des employés" class="dashboard-screenshot">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="image3.png" alt="E-signature" class="dashboard-screenshot">
+                            <img src="image2.png" alt="E-signature" class="dashboard-screenshot">
                         </div>
                     </div>
+                </div>
+                <!-- Moved dot indicators outside the carousel container -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
                 </div>
             </div>
             
@@ -3593,31 +3599,40 @@
         border-radius: 4px;
     }
 
-    /* Refined indicators */
+    /* Dot indicators styling */
     .carousel-indicators {
         display: flex;
         justify-content: center;
-        gap: 8px;
         margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
     }
-
+    
     .indicator {
-        width: 6px;
-        height: 6px;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(100, 100, 100, 0.3);
         border-radius: 50%;
-        background-color: var(--gray);
-        opacity: 0.3;
+        margin: 0 6px;
         cursor: pointer;
-        border: none;
-        padding: 0;
         transition: all 0.3s ease;
     }
-
+    
     .indicator.active {
-        opacity: 1;
         background-color: var(--primary);
-        width: 20px;
-        border-radius: 3px;
+        transform: scale(1.2);
+    }
+
+    /* Refined indicators */
+    @media (max-width: 992px) {
+        .benefits-container {
+            flex-direction: column;
+        }
+        
+        .benefits-image {
+            max-width: 600px;
+            margin: 0 auto;
+        }
     }
 </style>
 
@@ -3625,9 +3640,14 @@
     document.addEventListener('DOMContentLoaded', function() {
         const track = document.querySelector('.screenshot-track');
         const slides = document.querySelectorAll('.screenshot-slide');
-        const indicators = document.querySelectorAll('.indicator');
+        const indicators = document.querySelectorAll('.carousel-indicators .indicator');
         let currentIndex = 0;
         let autoScrollInterval;
+
+        // Make sure first indicator is active
+        if (indicators.length > 0) {
+            indicators[0].classList.add('active');
+        }
 
         function updateSlide(index) {
             track.style.transform = `translateX(-${index * 100}%)`;
@@ -3642,6 +3662,7 @@
         }
 
         function startAutoScroll() {
+            stopAutoScroll(); // Clear any existing interval first
             autoScrollInterval = setInterval(nextSlide, 4000);
         }
 
