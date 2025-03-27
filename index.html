@@ -1144,7 +1144,11 @@
             font-size: 36px;
             margin-bottom: 20px;
             font-weight: 600;
-            color: var(--primary);
+            color: #000000;  /* Making the heading text black */
+        }
+
+        .cta-text h2 .highlight-text {
+            color: var(--primary);  /* Preserving the primary color for the highlighted text */
         }
 
         .cta-text p {
@@ -2114,6 +2118,9 @@
                     <img src="logos/lenovo.png" alt="Lenovo" class="client-logo">
                     <img src="logos/onomo.png" alt="ONOMO" class="client-logo">
                     <img src="logos/yves 1 (2).png" alt="YVES" class="client-logo">
+                    <img src="logos/DK.png" alt="DK" class="client-logo">
+                    <img src="logos/effyis.png" alt="EFFYIS" class="client-logo">
+                    
                     <!-- Duplicate logos for continuous scrolling effect -->
                     <img src="logos/safiec 1.png" alt="SAFIEC" class="client-logo">
                     <img src="logos/engie.png" alt="ENGIE" class="client-logo">
@@ -2123,6 +2130,8 @@
                     <img src="logos/lenovo.png" alt="Lenovo" class="client-logo">
                     <img src="logos/onomo.png" alt="ONOMO" class="client-logo">
                     <img src="logos/yves 1 (2).png" alt="YVES" class="client-logo">
+                    <img src="logos/DK.png" alt="DK" class="client-logo">
+                    <img src="logos/effyis.png" alt="EFFYIS" class="client-logo">
                 </div>
             </div>
             <p class="trust-text">Rejoignez les entreprises de tous les  secteurs d'activités qui font confiance à MintHR pour leurs opérations RH</p>
@@ -2142,11 +2151,11 @@
             <div class="tabs-nav">
                 <button class="tab-btn active" data-tab="conges">
                     <span class="tab-icon"><i class="fas fa-calendar-alt"></i></span>
-                    <span class="tab-label">Gestion des Congés</span>
+                    <span class="tab-label">Congés et Absences</span>
                 </button>
                 <button class="tab-btn" data-tab="documents">
                     <span class="tab-icon"><i class="fas fa-file-alt"></i></span>
-                    <span class="tab-label">Gestion Documentaire</span>
+                    <span class="tab-label">Documents</span>
                 </button>
                 <button class="tab-btn" data-tab="frais">
                     <span class="tab-icon"><i class="fas fa-receipt"></i></span>
@@ -2189,7 +2198,7 @@
                     <p>Notre solution de gestion documentaire vous permet de stocker, organiser et partager tous vos documents RH en toute sécurité.</p>
                     <ul class="feature-list">
                         <li>Stockage sécurisé et conforme au RGPD</li>
-                        <li>Signatures électroniques légales</li>
+                        <li>Signatures digitales</li>
                         <li>Modèles de documents personnalisables</li>
                         <li>Workflows d'approbation configurables</li>
                         <li>Recherche avancée et indexation automatique</li>
@@ -2209,7 +2218,7 @@
                     <p>Simplifiez la gestion des notes de frais avec notre solution mobile intuitive. Capture de reçus, validation et remboursement en quelques clics.</p>
                     <ul class="feature-list">
                         <li>Capture de reçus par smartphone</li>
-                        <li>Reconnaissance automatique des montants</li>
+                        <li>Calcul automatique des montants</li>
                         <li>Validation multi-niveaux configurable</li>
                         <li>Intégration avec votre logiciel comptable</li>
                         <li>Rapports analytiques des dépenses</li>
@@ -2229,7 +2238,7 @@
                     <p>Optimisez la gestion des plannings et le suivi des présences avec notre solution intuitive. Visualisation claire et reporting automatisé.</p>
                     <ul class="feature-list">
                         <li>Planification des équipes par glisser-déposer</li>
-                        <li>Pointage mobile ou par badge</li>
+                        <li>Intégration avec pointeuse</li>
                         <li>Gestion des heures supplémentaires</li>
                         <li>Alertes en cas d'anomalies</li>
                         <li>Export des données pour la paie</li>
@@ -2622,8 +2631,8 @@
 <section class="video-reels-section">
     <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
-            <h2>Témoignages <span class="highlight-text">Vidéo</span> de nos Clients</h2>
-            <p class="section-subheading">Découvrez ce que nos clients disent de MintHR</p>
+            <h2>Leurs histoires <span class="highlight-text">en Vidéo</span></h2>
+            <p class="section-subheading">Découvrez comment nos clients transforment leur gestion RH avec MintHR</p>
         </div>
         
         <div class="video-reels-container" data-aos="fade-up">
@@ -4158,7 +4167,7 @@
     <section class="media-features-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <h3>PRÉSENT DANS LES MÉDIAS</h3>
+                <h3>ILS PARLENT DE NOUS</h3>
             </div>
             
             <div class="media-logos-container" data-aos="fade-up" data-aos-delay="100">
@@ -4249,10 +4258,10 @@
         <div class="container">
             <div class="cta-container">
                 <div class="cta-text" data-aos="fade-right">
-                    <h2>Découvrez ce que MintHR peut faire pour votre entreprise</h2>
+                    <h2>Découvrez ce que <span class="highlight-text">MintHR</span> peut faire pour votre entreprise</h2>
                     
                     <div class="stats-overview">
-                        <p class="stats-main">+600 000 professionnels optimisent leurs process RH avec MintHR.</p>
+                        <p class="stats-main">+10 000 professionnels optimisent leurs process RH avec MintHR.</p>
                         
                         <div class="stats-row">
                             <div class="stat-item">
@@ -4262,7 +4271,7 @@
                             
                             <div class="stat-item">
                                 <i class="fas fa-users"></i>
-                                <span>+10 000 entreprises simplifient leur gestion RH</span>
+                                <span>+100 entreprises simplifient leur gestion RH</span>
                             </div>
                         </div>
                         
