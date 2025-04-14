@@ -2,8 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformez vos opérations RH avec la solution SIRH de Minthr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Transformez vos opérations RH avec la solution SIRH de MintHR</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
+    <link rel="manifest" href="image/site.webmanifest" />
+
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Dancing+Script:wght@400;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -2013,12 +2021,349 @@
         .cta-form select:focus {
             border-color: var(--primary);
         }
+
+        /* Improved Responsive Styles - Add at the end of your existing CSS */
+        @media (max-width: 1200px) {
+            .container {
+                width: 100%;
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .video-container {
+                height: 400px;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .journey-box {
+                padding: 30px 20px;
+            }
+
+            .cta-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .tabs-nav {
+                gap: 15px;
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tab-content.active {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+
+            .offer-tag {
+                font-size: 12px;
+                padding: 6px 12px;
+                margin-bottom: 15px;
+            }
+
+            .video-container {
+                height: 250px;
+            }
+
+            .hero {
+                padding: 40px 0 30px;
+            }
+
+            /* Hide floating elements on mobile for better performance */
+            .floating-elements {
+                display: none;
+            }
+
+            /* Adjust modules section for mobile */
+            .module-card {
+                width: 180px;
+                padding: 12px 15px;
+            }
+
+            .module-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            .module-card h3 {
+                font-size: 14px;
+            }
+
+            /* Improve tab navigation for mobile */
+            .tabs-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 25px;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 10px 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            .tab-content.active {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .tab-text h3 {
+                font-size: 22px;
+            }
+
+            /* Improve features section for mobile */
+            .feature-badge {
+                font-size: 12px;
+            }
+
+            .feature-list li {
+                padding-left: 25px;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+
+            /* Make testimonials better on mobile */
+            .testimonial-card {
+                width: 280px;
+                padding: 20px;
+            }
+
+            .testimonial-content {
+                font-size: 14px;
+            }
+
+            .author-name {
+                font-size: 14px;
+            }
+
+            .author-position {
+                font-size: 12px;
+            }
+
+            /* Make CTA better on mobile */
+            .cta-section {
+                padding: 50px 0;
+            }
+
+            .cta-text h2 {
+                font-size: 26px;
+            }
+
+            .cta-text p {
+                font-size: 16px;
+            }
+
+            .form-card {
+                padding: 25px 20px;
+            }
+
+            .form-card h3 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* Adjust form for mobile */
+            .cta-form input, .cta-form select, .cta-form button {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            /* Adjust Video Reels for mobile */
+            .reels-grid-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .video-reel-card {
+                height: 450px;
+                width: 100%;
+            }
+
+            .company-logo {
+                height: 25px;
+            }
+
+            .client-details h3 {
+                font-size: 16px;
+            }
+
+            .client-details p {
+                font-size: 12px;
+            }
+
+            .testimonial-quote {
+                font-size: 14px;
+            }
+
+            /* Adjust footer for mobile */
+            footer {
+                padding: 40px 0 20px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .footer-col h3 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .footer-col ul li {
+                margin-bottom: 8px;
+            }
+
+            .footer-col ul li a {
+                font-size: 14px;
+            }
+
+            .social-links {
+                justify-content: flex-start;
+                gap: 10px;
+            }
+
+            .copyright {
+                font-size: 12px;
+                padding-top: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            header .container {
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+                line-height: 1.4;
+            }
+
+            .cta-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .section-subheading {
+                font-size: 14px;
+            }
+
+            /* Improve stats section for mobile */
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .percent, .metric-unit {
+                font-size: 20px;
+            }
+
+            .stat-text {
+                font-size: 14px;
+            }
+
+            /* Adjust logo size in header */
+            .logo {
+                height: 30px;
+            }
+
+            /* Adjust client logos */
+            .client-logo {
+                height: 30px;
+                margin: 0 15px;
+            }
+
+            /* Make sure security badges are responsive */
+            .security-badges {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .security-badge {
+                width: 45%;
+                margin-bottom: 10px;
+            }
+
+            /* Fix video controls on mobile */
+            .play-pause-btn {
+                width: 36px;
+                height: 36px;
+            }
+
+            .close-btn {
+                width: 28px;
+                height: 28px;
+            }
+
+            /* Make sure modules are visible on mobile */
+            .modules-section:before, 
+            .modules-section:after {
+                width: 8%;
+            }
+        }
+
+        /* Add touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            /* Increase tap target sizes for better mobile experience */
+            .tab-btn, 
+            .cta-button,
+            button,
+            .play-pause-btn,
+            .close-btn,
+            .sound-toggle {
+                min-height: 44px; /* Apple's recommended minimum touch target size */
+            }
+
+            /* Add active states for touch devices */
+            .tab-btn:active,
+            .cta-button:active,
+            button:active {
+                opacity: 0.8;
+            }
+
+            /* Improve scrolling on touch devices */
+            .checkbox-container,
+            .reels-grid-container {
+                -webkit-overflow-scrolling: touch;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="https://cdn.brandfetch.io/idLxbyT6jP/theme/dark/logo.svg" alt="Logo Minthr" class="logo">
+            <img src="https://cdn.brandfetch.io/idLxbyT6jP/theme/dark/logo.svg" alt="Logo MintHR" class="logo">
             <a href="#cta" class="cta-button">Demander une démo</a>
         </div>
     </header>
@@ -2089,12 +2434,12 @@
         <div class="container hero-content" data-aos="fade-up">
             <div class="offer-tag">La solution complète pour transformer la gestion RH de vos équipes</div>
             
-            <h1>MintHR est un logiciel RH  qui centralise tous vos processus RH sur un seul et même outil.</h1>
+            <h1>MintHR un logiciel RH  qui centralise tous vos processus RH sur un seul et même outil.</h1>
             
             
             <div class="video-container" data-aos="zoom-in" data-aos-delay="300">
                 <video controls>
-                    <source src="https://ucbeab854f4a9e1ec42467f49bb7.dl.dropboxusercontent.com/cd/0/inline/Cml_i4J4-W7_mu7ORmpUMSQkSGQLWZIyWN_lkSdIVRQGyEwuOXDQvigEvoZsKwnx0gG8tyJdt7JG1FfU78zZgIxFChr_rYRgPWzuraXu02WGYYsOeuV-nbcBEseXieGK674vnybC5URC3cQ64ExiNwGw/file#" type="video/mp4">
+                    <source src="https://www.dropbox.com/scl/fi/5z3lx7mj7xn5ksed9bro8/MINTHR1.mp4?rlkey=qnex1b73bftk0sg9rxssqca5g&e=4&raw=1" type="video/mp4">
                     Votre navigateur ne supporte pas la lecture de vidéos.
                 </video>
             </div>
@@ -2130,10 +2475,10 @@
     </section>
 
  <!-- Updated Features Section -->
-<section class="features">
+<section class="features" id="features">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
-            <h2>Pourquoi choisir Minthr pour votre entreprise</h2>
+            <h2>Pourquoi choisir MintHR pour votre entreprise</h2>
             <div class="section-divider"></div>
             <p class="section-subheading">Découvrez nos fonctionnalités conçues pour simplifier vos processus RH</p>
         </div>
@@ -2247,7 +2592,7 @@
 </section>
 
 <!-- Modules Section -->
-<section class="modules-section">
+<section class="modules-section" id="modules">
     <div class="section-header text-center" data-aos="fade-up">
         <h2>Explorez <span class="highlight-text">Les solutions Mint</span></h2>
         <p class="section-subheading">Adoptez les fonctionnalités selon vos besoins</p>
@@ -2619,11 +2964,11 @@
     });
 </script>
 <!-- Client Video Testimonials Section - Stylish Reel Format -->
-<section class="video-reels-section">
+<section class="video-reels-section" id="testimonials">
     <div class="container">
         <div class="section-header text-center" data-aos="fade-up">
-            <h2>Témoignages <span class="highlight-text">Vidéo</span> de nos Clients</h2>
-            <p class="section-subheading">Découvrez ce que nos clients disent de Minthr</p>
+            <h2>Leurs histoires <span class="highlight-text">en Vidéo</span></h2>
+            <p class="section-subheading">Découvrez comment nos clients transforment leur gestion RH avec MintHR</p>
         </div>
         
         <div class="video-reels-container" data-aos="fade-up">
@@ -2637,12 +2982,10 @@
                         <div class="overlay-gradient"></div>
                         <div class="testimonial-overlay">
                             <div class="client-info">
-                                <div class="client-avatar">
-                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Tarek Rekbi">
-                                </div>
+                                <!-- Removed client-avatar div -->
                                 <div class="client-details">
-                                    <h3>Tarek Rekbi</h3>
-                                    <p>HR Business Partner, Effyis Group</p>
+                                    <h3>Tarek Rakbi</h3>
+                                    <p>Hr Partner, Effyis Group</p>
                                 </div>
                             </div>
                             <div class="testimonial-quote">
@@ -2681,9 +3024,7 @@
                         <div class="overlay-gradient"></div>
                         <div class="testimonial-overlay">
                             <div class="client-info">
-                                <div class="client-avatar">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Yvan Rousseau">
-                                </div>
+                                <!-- Removed client-avatar div -->
                                 <div class="client-details">
                                     <h3>Yvan Rousseau</h3>
                                     <p>Directeur Général, Smadire</p>
@@ -2693,7 +3034,7 @@
                                 "Une application qui dialogue directement avec tous les collaborateurs, ça donne une dynamique extraordinaire."
                             </div>
                             <div class="company-logo">
-                                <img src="logos/smadire.png" alt="Smadire">
+                                <img src="logos/smadire.png" alt="smadire">
                             </div>
                         </div>
                         <div class="sound-toggle">
@@ -2725,9 +3066,7 @@
                         <div class="overlay-gradient"></div>
                         <div class="testimonial-overlay">
                             <div class="client-info">
-                                <div class="client-avatar">
-                                    <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Adil Chelloune">
-                                </div>
+                                <!-- Removed client-avatar div -->
                                 <div class="client-details">
                                     <h3>Adil Chelloune</h3>
                                     <p>Directeur Support, Zalar Agri</p>
@@ -2737,7 +3076,7 @@
                                 "Nous avons observé un gain de temps alloué aux tâches administratives de plus de 40%."
                             </div>
                             <div class="company-logo">
-                                <img src="logos/zalarbw (1).png" alt="Colgate">
+                                <img src="logos/zalarbw (1).png" alt="Zalar">
                             </div>
                         </div>
                         <div class="sound-toggle">
@@ -3082,6 +3421,77 @@
     .modules-row {
         position: relative;
         z-index: 1;
+    }
+
+    /* Responsive styles for video reels section */
+    @media (max-width: 1200px) {
+        .reels-grid-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .video-reel-card {
+            height: 580px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .video-reels-section {
+            padding: 60px 0;
+        }
+        
+        .section-header h2 {
+            font-size: 28px;
+        }
+        
+        .section-subheading {
+            font-size: 16px;
+        }
+        
+        .reels-grid-container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 10px 0;
+        }
+        
+        .video-reel-card {
+            height: 500px;
+            max-width: 100%;
+        }
+        
+        .video-reels-container {
+            padding: 0 20px;
+        }
+        
+        .testimonial-overlay {
+            padding: 20px;
+        }
+        
+        .client-details h3 {
+            font-size: 16px;
+        }
+        
+        .client-details p {
+            font-size: 12px;
+        }
+        
+        .testimonial-quote {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .video-reel-card {
+            height: 450px;
+        }
+        
+        .play-pause-btn,
+        .sound-toggle,
+        .close-btn {
+            width: 40px;
+            height: 40px;
+        }
     }
 </style>
 
@@ -3573,7 +3983,7 @@
                 <div class="screenshot-carousel">
                     <div class="screenshot-track">
                         <div class="screenshot-slide">
-                            <img src="image0.png" alt="Dashboard Minthr" class="dashboard-screenshot">
+                            <img src="image0.png" alt="Dashboard MintHR" class="dashboard-screenshot">
                         </div>
                         <div class="screenshot-slide">
                             <img src="image1.png" alt="Gestion des employés" class="dashboard-screenshot">
@@ -3878,7 +4288,7 @@
     <section class="impact-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <h2>L'impact <span class="highlight-text">mesurable</span> de Minthr</h2>
+                <h2>L'impact <span class="highlight-text">mesurable</span> de MintHR</h2>
                 <p class="section-subheading">Des résultats concrets pour votre entreprise</p>
             </div>
             
@@ -4010,7 +4420,7 @@
 
     <section class="clients-section">
         <div class="container" data-aos="fade-up">
-            <h2>Ce que nos clients disent de nous</h2>
+            <h2>La voix de nos clients</h2>
             <div class="testimonials-container">
                 <!-- First row of testimonials -->
                 <div class="testimonial-track">
@@ -4021,7 +4431,6 @@
                                 "Une application sur smartphone qui dialogue directement avec tous les collaborateurs, ça donne une dynamique extraordinaire."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Yvan Rousseau" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Yvan Rousseau</span>
                                     <span class="author-position">DG, SMADIRE</span>
@@ -4035,7 +4444,6 @@
                                 "Après une année d'implémentation, nous avons observé un gain de temps alloué aux tâches administratives de plus de 40%."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Adil Chaloune" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Adil Chaloune</span>
                                     <span class="author-position">Directeur Support, ZALAR</span>
@@ -4049,7 +4457,6 @@
                                 "Des tâches qui autrefois nécessitaient des allers-retours fastidieux sont aujourd'hui validées en un seul clic."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Tarek Rakbi" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Tarek Rakbi</span>
                                     <span class="author-position">HR Partner, Effyis</span>
@@ -4063,7 +4470,6 @@
                                 "MintHR simplifie la gestion des congés avec un calendrier interactif, et leur support client est remarquablement réactif et pertinent."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Julie Mercier" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Julie Mercier</span>
                                     <span class="author-position">DRH, DK PARTNERS</span>
@@ -4078,7 +4484,6 @@
                                 "MintHR nous permet d'harmoniser nos processus RH dans 13 pays, en dotant nos managers d'outils performants."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Valérie Karmin Detry" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Valérie Karmin Detry</span>
                                     <span class="author-position">DRH, ONOMO HOTELS</span>
@@ -4098,7 +4503,6 @@
                                 "Avec MintHR, l'onboarding de nouveaux collaborateurs se fait en quelques minutes au lieu de plusieurs heures, sans saisie manuelle."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Aziz Rahmane" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Aziz Rahmane</span>
                                     <span class="author-position">DRH, Acwa</span>
@@ -4112,7 +4516,6 @@
                                 "Nos équipes RH gèrent plus aisément le télétravail et le travail hybride, avec une plateforme entièrement personnalisable sans obstacle."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Mohammed Nassiri" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Mohammed Nassiri</span>
                                     <span class="author-position">DG, Lenovo</span>
@@ -4126,7 +4529,6 @@
                                 "MintHR nous permet d'harmoniser nos processus RH dans 13 pays, en dotant nos managers d'outils performants."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Valérie Karmin Detry" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Valérie Karmin Detry</span>
                                     <span class="author-position">DRH, ONOMO HOTELS</span>
@@ -4140,7 +4542,6 @@
                                 "MintHR simplifie la gestion des congés avec un calendrier interactif, et leur support client est remarquablement réactif et pertinent."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Julie Mercier" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Julie Mercier</span>
                                     <span class="author-position">DRH, DK PARTNERS</span>
@@ -4155,7 +4556,6 @@
                                 "Une application sur smartphone qui dialogue directement avec tous les collaborateurs, ça donne une dynamique extraordinaire."
                             </div>
                             <div class="testimonial-author">
-                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Yvan Rousseau" class="author-avatar">
                                 <div class="author-info">
                                     <span class="author-name">Yvan Rousseau</span>
                                     <span class="author-position">DG, SMADIRE</span>
@@ -4174,7 +4574,7 @@
     <section class="media-features-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <h3>PRÉSENT DANS LES MÉDIAS</h3>
+                <h3>ILS PARLENT DE NOUS</h3>
             </div>
             
             <div class="media-logos-container" data-aos="fade-up" data-aos-delay="100">
@@ -4265,10 +4665,10 @@
         <div class="container">
             <div class="cta-container">
                 <div class="cta-text" data-aos="fade-right">
-                    <h2>Découvrez ce que Minthr peut faire pour votre entreprise</h2>
+                    <h2>Découvrez ce que <span class="highlight-text">MintHR</span> peut faire pour votre entreprise</h2>
                     
                     <div class="stats-overview">
-                        <p class="stats-main">+600 000 professionnels optimisent leurs process RH avec Minthr.</p>
+                        <p class="stats-main">+10 000 professionnels optimisent leurs process RH avec MintHR.</p>
                         
                         <div class="stats-row">
                             <div class="stat-item">
@@ -4278,7 +4678,7 @@
                             
                             <div class="stat-item">
                                 <i class="fas fa-users"></i>
-                                <span>+10 000 entreprises simplifient leur gestion RH</span>
+                                <span>+100 entreprises simplifient leur gestion RH</span>
                             </div>
                         </div>
                         
@@ -4453,7 +4853,7 @@
             </div>
             
             <div class="copyright">
-                &copy; 2023 Minthr. Tous droits réservés.
+                &copy; 2023 MintHR. Tous droits réservés.
             </div>
         </div>
     </footer>
@@ -4820,6 +5220,556 @@
             fixDropdown();
         }
     })();
+    </script>
+
+    <!-- Improved mobile styles -->
+    <style>
+        /* Mobile form improvements */
+        @media (max-width: 768px) {
+            .form-card {
+                padding: 25px 20px;
+            }
+            
+            .cta-form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-form .form-group {
+                margin-bottom: 0;
+            }
+            
+            .cta-form input, 
+            .cta-form select, 
+            .cta-form button {
+                width: 100%;
+                height: auto;
+                padding: 15px;
+                font-size: 16px; /* iOS requires 16px+ font to prevent zoom */
+                border-radius: 8px;
+            }
+            
+            /* Fix for iOS shadow issues */
+            .cta-form input, 
+            .cta-form select {
+                -webkit-appearance: none;
+                appearance: none;
+            }
+            
+            /* Make sure select dropdown arrows are visible */
+            .cta-form select {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 15px center;
+                padding-right: 40px;
+            }
+            
+            /* Make buttons larger for touch */
+            .cta-form button {
+                min-height: 48px;
+                margin-top: 10px;
+            }
+            
+            /* Improve checkbox display on mobile */
+            .checkbox-container {
+                max-height: 120px;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .checkbox-option {
+                padding: 8px 5px;
+            }
+            
+            .checkbox-option input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
+            /* Video reels mobile adjustments */
+            .video-reels-section {
+                padding: 60px 0;
+            }
+            
+            .reels-grid-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px 0;
+            }
+            
+            .video-reel-card {
+                height: 400px;
+                max-width: 100%;
+            }
+            
+            .testimonial-overlay {
+                padding: 20px;
+            }
+            
+            .testimonial-quote {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
+            .client-details h3 {
+                font-size: 16px;
+            }
+            
+            .client-details p {
+                font-size: 12px;
+            }
+            
+            /* Ensure video controls are more touch-friendly */
+            .play-pause-btn,
+            .sound-toggle,
+            .close-btn {
+                min-width: 44px;
+                min-height: 44px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .cta-section {
+                padding: 40px 0;
+            }
+            
+            .cta-text h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            
+            .cta-text p {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+            
+            .form-card h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            
+            .guarantee {
+                font-size: 12px;
+            }
+            
+            /* Fix for iOS zoom issue */
+            @supports (-webkit-touch-callout: none) {
+                .cta-form input, 
+                .cta-form select, 
+                .cta-form textarea {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    </style>
+
+    <!-- Add mobile optimization script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Improve performance on mobile
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // Reduce animation duration for better performance
+                document.querySelectorAll('.track-1, .track-2').forEach(track => {
+                    if (track) track.style.animationDuration = '20s';
+                });
+                
+                // Lazy load videos on mobile
+                document.querySelectorAll('video').forEach(video => {
+                    // Only start video when in viewport
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                setTimeout(() => {
+                                    video.play().catch(e => console.log('Autoplay prevented:', e));
+                                }, 100);
+                            } else {
+                                video.pause();
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    
+                    observer.observe(video);
+                });
+            }
+            
+            // Fix for 100vh issue on mobile browsers
+            function setMobileViewportHeight() {
+                const vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            }
+            
+            window.addEventListener('resize', setMobileViewportHeight);
+            setMobileViewportHeight();
+            
+            // Lazy load all images except logo
+            const images = document.querySelectorAll('img:not(.logo)');
+            
+            if ('loading' in HTMLImageElement.prototype) {
+                // Browser supports native lazy loading
+                images.forEach(img => {
+                    if (!img.hasAttribute('loading')) {
+                        img.setAttribute('loading', 'lazy');
+                    }
+                });
+            } else {
+                // Fallback for browsers that don't support lazy loading
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute('data-src');
+                            
+                            if (src) {
+                                img.src = src;
+                            }
+                            
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+                
+                images.forEach(img => {
+                    if (img.src) {
+                        img.setAttribute('data-src', img.src);
+                        img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"%3E%3C/svg%3E';
+                        imageObserver.observe(img);
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Add responsive styles for both testimonials and video reels sections -->
+    <style>
+        /* Additional responsive styles for video reels and testimonials */
+        @media (max-width: 992px) {
+            /* Video reels */
+            .reels-grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .video-reel-card {
+                height: 550px;
+            }
+            
+            /* Testimonials */
+            .testimonial-card {
+                width: 320px;
+                padding: 25px;
+            }
+            
+            .testimonial-content {
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            /* Video reels */
+            .video-reels-section {
+                padding: 60px 0;
+            }
+            
+            .reels-grid-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .video-reel-card {
+                height: 500px;
+                width: 100%;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            
+            .video-controls {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            /* Client testimonials */
+            .clients-section {
+                padding: 60px 0;
+            }
+            
+            .clients-section h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+            
+            .testimonials-container {
+                padding: 10px 0;
+            }
+            
+            .testimonial-card {
+                width: 280px;
+                padding: 20px;
+                margin: 0 10px;
+            }
+            
+            .testimonial-content {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .author-name {
+                font-size: 14px;
+            }
+            
+            .author-position {
+                font-size: 12px;
+            }
+            
+            .company-logo {
+                height: 25px;
+            }
+            
+            .testimonial-row,
+            .testimonial-row.reverse {
+                animation-duration: 25s;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            /* Video reels */
+            .video-reel-card {
+                height: 450px;
+            }
+            
+            .testimonial-overlay {
+                padding: 20px;
+            }
+            
+            .client-details h3 {
+                font-size: 16px;
+            }
+            
+            .client-details p {
+                font-size: 12px;
+            }
+            
+            .testimonial-quote {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
+            .play-pause-btn,
+            .sound-toggle,
+            .close-btn {
+                width: 40px;
+                height: 40px;
+            }
+            
+            /* Client testimonials */
+            .clients-section h2 {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+            
+            .testimonial-card {
+                width: 260px;
+                padding: 15px;
+            }
+            
+            .testimonial-content {
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+            
+            .testimonial-content:before {
+                font-size: 40px;
+                top: -10px;
+                left: -10px;
+            }
+            
+            .author-name {
+                font-size: 13px;
+            }
+            
+            .author-position {
+                font-size: 11px;
+            }
+            
+            .company-logo {
+                height: 20px;
+            }
+            
+            .trust-text {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+            
+            .testimonial-row,
+            .testimonial-row.reverse {
+                animation-duration: 20s;
+            }
+        }
+    </style>
+
+    <!-- Add enhanced mobile styles for testimonials section -->
+    <style>
+        /* Enhanced mobile styles for testimonials */
+        @media (max-width: 768px) {
+            .clients-section {
+                padding: 50px 0 40px;
+            }
+            
+            .clients-section h2 {
+                font-size: 26px;
+                margin-bottom: 25px;
+            }
+            
+            .testimonials-container {
+                overflow: visible;
+                padding: 0;
+            }
+            
+            .testimonials-container::before,
+            .testimonials-container::after {
+                width: 30px; /* Smaller fade effect */
+            }
+            
+            .testimonial-track {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding: 15px 0;
+                /* Make it snap on mobile */
+                scroll-snap-type: x mandatory;
+            }
+            
+            .testimonial-row {
+                display: flex;
+                animation: none; /* Disable animation on mobile for better performance */
+                width: max-content;
+                gap: 15px;
+            }
+            
+            .testimonial-card {
+                width: 270px;
+                min-width: 270px;
+                margin: 0 5px;
+                padding: 20px;
+                scroll-snap-align: center;
+                height: auto;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            }
+            
+            .testimonial-content {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+                height: auto;
+            }
+            
+            .testimonial-author {
+                flex-wrap: wrap;
+            }
+            
+            .author-info {
+                flex: 1;
+            }
+            
+            .author-name {
+                font-size: 14px;
+            }
+            
+            .author-position {
+                font-size: 12px;
+            }
+            
+            .company-logo {
+                height: 22px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .clients-section {
+                padding: 40px 0 30px;
+            }
+            
+            .clients-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .testimonial-card {
+                width: 250px;
+                min-width: 250px;
+                padding: 15px;
+            }
+            
+            .testimonial-content {
+                font-size: 13px;
+            }
+            
+            .testimonial-content:before {
+                font-size: 40px;
+                top: -10px;
+                left: -5px;
+            }
+            
+            .testimonial-author {
+                align-items: flex-start;
+            }
+            
+            .company-logo {
+                height: 18px;
+            }
+        }
+    </style>
+
+    <!-- Add touch-friendly scrolling behavior for mobile testimonials -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // Stop testimonial animations on mobile for better scroll experience
+                const testimonialRows = document.querySelectorAll('.testimonial-row');
+                testimonialRows.forEach(row => {
+                    row.style.animation = 'none';
+                });
+                
+                // Add touch scrolling indicators
+                const clientsSection = document.querySelector('.clients-section');
+                if (clientsSection) {
+                    const scrollIndicator = document.createElement('div');
+                    scrollIndicator.className = 'scroll-indicator';
+                    scrollIndicator.innerHTML = '<span>← Scroll →</span>';
+                    scrollIndicator.style.textAlign = 'center';
+                    scrollIndicator.style.fontSize = '12px';
+                    scrollIndicator.style.color = '#6B7280';
+                    scrollIndicator.style.marginTop = '15px';
+                    
+                    // Insert after first testimonial track
+                    const firstTrack = clientsSection.querySelector('.testimonial-track');
+                    if (firstTrack) {
+                        firstTrack.parentNode.insertBefore(scrollIndicator, firstTrack.nextSibling);
+                    }
+                }
+            }
+        });
     </script>
 </body>
 </html>
